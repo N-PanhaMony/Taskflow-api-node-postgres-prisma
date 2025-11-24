@@ -72,7 +72,7 @@ router.post('/login', (req, res) => {
         if (!passwordIsValid) {
             return res.status(401).send({ message: "Invalid password" })
         }
-
+        
         // Create JWT token with user ID, expires in 24h
         const token = jwt.sign(
             { id: user.id },

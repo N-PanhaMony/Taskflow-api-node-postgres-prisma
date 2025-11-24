@@ -9,14 +9,14 @@ Content-Type: application/json
     "username" : "Mooo@gmail.com",
     "password" : "12345"
 
-}
+} 
 
 ### Login /auth/login
 POST  http://localhost:5001/auth/login
 Content-Type: application/json
 
 {
-    "username" : "Nooo@gmail.com",
-    "password" : "123"
+    "username" : "Mooo@gmail.com",
+    "password" : "12345"
 
-}
+} 

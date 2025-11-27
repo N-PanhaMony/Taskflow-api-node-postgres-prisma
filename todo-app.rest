@@ -6,8 +6,8 @@ POST http://localhost:5003/auth/register
 Content-Type: application/json
 
 {
-    "username": "gilgamesh@gmail.com",
-    "password": "123123123"
+    "username": "bot@gmail.com",
+    "password": "12345678"
 }
 
 ### Login a user POST /AUTH/LOGIN
@@ -15,17 +15,16 @@ POST http://localhost:5003/auth/login
 Content-Type: application/json
 
 {
-    "username": "gilgamesh@gmail.com",
-    "password": "123123123"
+    "username": "bot@gmail.com",
+    "password": "12345678"
 }
 
 ### Fetch all todos GET /TODOS (protected)
 GET http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzY0MDg0OTI2LCJleHAiOjE3NjQxNzEzMjZ9.zPdxSF1fxY1b-NLLI2_fQL7UFC-ZN1BVzkj4opqyDn0
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY0MjYwMDc3LCJleHAiOjE3NjQzNDY0Nzd9.9LPPU2jqjiuzaMmSeazG-vutMyOM8nWC3SjN8iNw4kc
 ### Creates a new todo POST /TODOS (protected)
 POST http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzY0MDg0OTI2LCJleHAiOjE3NjQxNzEzMjZ9.zPdxSF1fxY1b-NLLI2_fQL7UFC-ZN1BVzkj4opqyDn0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY0MjYwMDc3LCJleHAiOjE3NjQzNDY0Nzd9.9LPPU2jqjiuzaMmSeazG-vutMyOM8nWC3SjN8iNw4kc
 Content-Type: application/json 
 
 {
@@ -33,8 +32,8 @@ Content-Type: application/json
 }
 
 ### Update a todo PUT /TODOS/:ID (protected)
-PUT http://localhost:5003/todos/11
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzY0MDg0OTI2LCJleHAiOjE3NjQxNzEzMjZ9.zPdxSF1fxY1b-NLLI2_fQL7UFC-ZN1BVzkj4opqyDn0
+PUT http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY0MjYwMDc3LCJleHAiOjE3NjQzNDY0Nzd9.9LPPU2jqjiuzaMmSeazG-vutMyOM8nWC3SjN8iNw4kc
 Content-Type: application/json
 
 {
@@ -42,5 +41,5 @@ Content-Type: application/json
 }
 
 ### Delete a todo DELETE /TODOS/:ID (protected)
-DELETE http://localhost:5003/todos/12
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzY0MDg0OTI2LCJleHAiOjE3NjQxNzEzMjZ9.zPdxSF1fxY1b-NLLI2_fQL7UFC-ZN1BVzkj4opqyDn0
+DELETE http://localhost:5003/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY0MjYwMDc3LCJleHAiOjE3NjQzNDY0Nzd9.9LPPU2jqjiuzaMmSeazG-vutMyOM8nWC3SjN8iNw4kc
